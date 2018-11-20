@@ -263,6 +263,7 @@ module Apartment
       end
 
       class SeparateDbConnectionHandler < ::ActiveRecord::Base
+        self.abstract_class = true
       end
     end
   end
